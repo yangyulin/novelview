@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novel View — Event Photography</title>
+  <meta name="description" content="Novel View — professional event photography. Weddings, corporate events, parties, and concerts captured with a cinematic eye. Book your shoot today." />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:title" content="Novel View — Event Photography" />
+  <meta property="og:description" content="Professional event photography with a cinematic eye. Weddings, corporate, parties, concerts." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./images/gallery/bridge-dusk.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <div class="nav__left">
+        <div class="langswitch" id="langSwitch" role="group" aria-label="Language">
+          <button class="langswitch__btn is-active" data-lang="en">EN</button>
+          <button class="langswitch__btn" data-lang="zh">中文</button>
+        </div>
+        <a href="#home" class="nav__brand">Novel<span>View</span></a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#testimonials" data-i18n="nav.reviews">Reviews</a>
+        <a href="#contact" class="nav__cta" data-i18n="nav.book">Book a Shoot</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">Professional Event Photography</p>
+      <h1 class="hero__title" data-i18n-html="hero.title">Every moment,<br />a novel view.</h1>
+      <p class="hero__sub" data-i18n="hero.sub">Weddings · Corporate · Parties · Concerts — captured with a cinematic eye and delivered fast.</p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary" data-i18n="hero.book">Book Your Event</a>
+        <a href="#portfolio" class="btn btn--ghost" data-i18n="hero.view">View Portfolio</a>
+      </div>
+    </div>
+    <a href="#portfolio" class="hero__scroll" aria-label="Scroll down">&#8595;</a>
+  </section>
+
+  <!-- ============ PROMO BANNER (advertisement) ============ -->
+  <div class="promo" id="promo">
+    <p data-i18n-html="promo.text">🎉 <strong>Summer Special:</strong> Book any wedding package before Aug 31 and get a complimentary engagement session. <a href="#contact">Claim offer →</a></p>
+  </div>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="section" id="portfolio">
+    <div class="section__head">
+      <p class="section__eyebrow" data-i18n="portfolio.eyebrow">Selected Work</p>
+      <h2 class="section__title" data-i18n="portfolio.title">Portfolio</h2>
+      <p class="section__lead" data-i18n="portfolio.lead">A look at events we've had the privilege to capture.</p>
+    </div>
+
+    <div class="gallery gallery--few" id="gallery">
+      <!-- Real photos live in ./images/gallery/ — add more <figure> tiles here. -->
+      <figure class="gallery__item gallery__item--tall" data-cat="scenery">
+        <img loading="lazy" src="./images/gallery/bridge-dusk.jpg" alt="Riverside bridge at dusk under a single warm light" />
+      </figure>
+      <figure class="gallery__item" data-cat="scenery">
+        <img loading="lazy" src="./images/gallery/lake-willows.jpg" alt="Willow trees mirrored in a calm lake" />
+      </figure>
+      <figure class="gallery__item" data-cat="scenery">
+        <img loading="lazy" src="./images/gallery/lake-lilies.jpg" alt="Lily pads on golden, reflective water" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES & PRICING (advertisement) ============ -->
+  <section class="section section--alt" id="services">
+    <div class="section__head">
+      <p class="section__eyebrow" data-i18n="services.eyebrow">Packages</p>
+      <h2 class="section__title" data-i18n="services.title">Services &amp; Pricing</h2>
+      <p class="section__lead" data-i18n="services.lead">Transparent packages. Custom quotes available for any event.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3 class="card__name" data-i18n="card.essential.name">Essential</h3>
+        <p class="card__price">$450<span data-i18n="unit.event">/event</span></p>
+        <ul class="card__list">
+          <li data-i18n="card.essential.f1">Up to 3 hours coverage</li>
+          <li data-i18n="card.essential.f2">1 photographer</li>
+          <li data-i18n="card.essential.f3">100+ edited photos</li>
+          <li data-i18n="card.essential.f4">Online gallery delivery</li>
+          <li data-i18n="card.essential.f5">48-hour preview</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block" data-i18n="btn.inquire">Inquire</a>
+      </div>
+
+      <div class="card card--featured">
+        <span class="card__badge" data-i18n="card.badge">Most Popular</span>
+        <h3 class="card__name" data-i18n="card.signature.name">Signature</h3>
+        <p class="card__price">$950<span data-i18n="unit.event">/event</span></p>
+        <ul class="card__list">
+          <li data-i18n="card.signature.f1">Up to 6 hours coverage</li>
+          <li data-i18n="card.signature.f2">2 photographers</li>
+          <li data-i18n="card.signature.f3">300+ edited photos</li>
+          <li data-i18n="card.signature.f4">Highlight video reel</li>
+          <li data-i18n="card.signature.f5">Printed photo album</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--block" data-i18n="btn.booknow">Book Now</a>
+      </div>
+
+      <div class="card">
+        <h3 class="card__name" data-i18n="card.premium.name">Premium</h3>
+        <p class="card__price">$1,800<span data-i18n="unit.event">/event</span></p>
+        <ul class="card__list">
+          <li data-i18n="card.premium.f1">Full-day coverage</li>
+          <li data-i18n="card.premium.f2">2 photographers + assistant</li>
+          <li data-i18n="card.premium.f3">600+ edited photos</li>
+          <li data-i18n="card.premium.f4">Cinematic film &amp; drone</li>
+          <li data-i18n="card.premium.f5">Premium album + prints</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block" data-i18n="btn.inquire">Inquire</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS / TRUST ============ -->
+  <section class="stats">
+    <div class="stat"><span class="stat__num">500+</span><span class="stat__label" data-i18n="stat.events">Events Captured</span></div>
+    <div class="stat"><span class="stat__num">8</span><span class="stat__label" data-i18n="stat.years">Years Experience</span></div>
+    <div class="stat"><span class="stat__num">120k+</span><span class="stat__label" data-i18n="stat.photos">Photos Delivered</span></div>
+    <div class="stat"><span class="stat__num">5.0★</span><span class="stat__label" data-i18n="stat.rating">Average Rating</span></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about">
+    <div class="about__media">
+      <img loading="lazy" src="./images/about/photographer.jpg" alt="The photographer at work" />
+    </div>
+    <div class="about__body">
+      <p class="section__eyebrow" data-i18n="about.eyebrow">About</p>
+      <h2 class="section__title" data-i18n="about.title">Behind the Lens</h2>
+      <p data-i18n="about.p1">Novel View is built on a simple belief: every event tells a story worth
+        remembering. With nearly a decade behind the camera, we specialize in capturing
+        the candid, fleeting moments that make your day unforgettable.</p>
+      <p data-i18n="about.p2">From intimate weddings to high-energy corporate launches, we bring a cinematic,
+        documentary approach — unobtrusive on the day, breathtaking in the final gallery.</p>
+      <ul class="about__points">
+        <li data-i18n="about.pt1">Cinematic, true-to-life editing</li>
+        <li data-i18n="about.pt2">Fast 48-hour preview turnaround</li>
+        <li data-i18n="about.pt3">Fully insured &amp; backup-equipped</li>
+        <li data-i18n="about.pt4">Available for travel worldwide</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="section section--alt" id="testimonials">
+    <div class="section__head">
+      <p class="section__eyebrow" data-i18n="testimonials.eyebrow">Kind Words</p>
+      <h2 class="section__title" data-i18n="testimonials.title">What Clients Say</h2>
+    </div>
+    <div class="quotes">
+      <blockquote class="quote">
+        <p data-i18n="quote1.text">Absolutely stunning photos. They captured moments we didn't even know happened.
+          Our wedding gallery feels like a film.</p>
+        <footer data-i18n="quote1.by">— Sarah &amp; James, Wedding</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p data-i18n="quote2.text">Professional, fast, and the quality blew our marketing team away. We've booked
+          them for every event since.</p>
+        <footer data-i18n="quote2.by">— Dana K., Corporate Event Lead</footer>
+      </blockquote>
+      <blockquote class="quote">
+        <p data-i18n="quote3.text">The concert shots were electric. They know exactly how to work the light and
+          the crowd. Highly recommend.</p>
+        <footer data-i18n="quote3.by">— The Midnight Echo, Band</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / BOOKING CTA ============ -->
+  <section class="section contact" id="contact">
+    <div class="section__head">
+      <p class="section__eyebrow" data-i18n="contact.eyebrow">Let's Work Together</p>
+      <h2 class="section__title" data-i18n="contact.title">Book Your Event</h2>
+      <p class="section__lead" data-i18n="contact.lead">Tell us about your event and we'll get back within 24 hours.</p>
+    </div>
+
+    <!-- To make this live: create a free form at https://formspree.io and put your
+         endpoint in the action below. Until then, the mailto fallback link works. -->
+    <form class="form" action="https://formspree.io/f/your-id-here" method="POST">
+      <div class="form__row">
+        <input type="text" name="name" data-i18n-ph="form.name" placeholder="Your name" required />
+        <input type="email" name="email" data-i18n-ph="form.email" placeholder="Email address" required />
+      </div>
+      <div class="form__row">
+        <input type="text" name="event-type" data-i18n-ph="form.type" placeholder="Event type (wedding, corporate…)" />
+        <input type="date" name="event-date" />
+      </div>
+      <textarea name="message" rows="5" data-i18n-ph="form.message" placeholder="Tell us about your event…" required></textarea>
+      <button type="submit" class="btn btn--primary btn--block" data-i18n="form.submit">Send Inquiry</button>
+    </form>
+    <p class="contact__alt"><span data-i18n="contact.alt">Prefer email?</span> <a href="mailto:hello@novelview.studio">hello@novelview.studio</a></p>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__brand">Novel View</span>
+      <nav class="footer__social">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="mailto:hello@novelview.studio" data-i18n="footer.email">Email</a>
+      </nav>
+      <p class="footer__copy" data-i18n="footer.copy">© 2026 Novel View. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">&#8250;</button>
+  </div>
+
+  <script src="./js/i18n.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
